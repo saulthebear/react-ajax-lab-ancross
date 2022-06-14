@@ -25,7 +25,10 @@ export default function DisplayCards({ villagers, handleClick, type }) {
 
   return (
     <>
-      <div>{list}</div>
+      <div>
+        {list.length > 0 && list}
+        {list.length === 0 && "No favorites"}
+      </div>
     </>
   )
 }

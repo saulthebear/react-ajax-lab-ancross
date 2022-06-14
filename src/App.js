@@ -67,7 +67,9 @@ function App() {
       <div style={{ display: "flex" }}>
         <div>
           <h2>Favorites:</h2>
-          <div style={{ maxHeight: "90vh", overflowY: "scroll" }}>
+          <div
+            style={{ maxHeight: "90vh", overflowY: "scroll", width: "50ch" }}
+          >
             <DisplayCards
               villagers={faves}
               type="favorites"
@@ -77,7 +79,9 @@ function App() {
         </div>
         <div>
           <h2>All:</h2>
-          <div style={{ maxHeight: "90vh", overflowY: "scroll" }}>
+          <div
+            style={{ maxHeight: "90vh", overflowY: "scroll", width: "50ch" }}
+          >
             <DisplayCards
               villagers={getFilteredVillagers()}
               handleClick={handleAddFave}
